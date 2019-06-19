@@ -13,9 +13,7 @@ class Image
       puts "Enter valid data."
       return
     else
-      @arr.collect { |x| 
-      puts x.join(" ")
-    }
+      @arr.map { |x| puts x.join(" ")}
   end
   end
 end
