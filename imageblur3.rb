@@ -8,6 +8,8 @@ class Image
     def blur(distance)
       ones = look_for_ones_and_store_them_in_new_array
 
+      # https://discuss.codecademy.com/t/12-iterating-over-multidimensional-arrays/39869
+
       @arr.each_with_index do |row_value, row|
         row_value.each_with_index do |col_value, col|
           ones.each do |a, b|
